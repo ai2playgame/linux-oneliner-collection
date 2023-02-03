@@ -46,3 +46,19 @@ awkを使う時、引数をシングルクォートで囲んでいた。この�
 
 ダブルクォートでクォートすると、中にあるBashの変数が解釈される。
 変数は極力ダブルクォートで囲んだほうがよい
+
+```bash
+$ p=pen
+$ re=""
+
+$ echo $p "$p" '$p'
+ pen pen $p
+
+$ echo "This is a $p". 'That is a $p.'
+This is a pen. That is a $p.
+
+$ echo "This is a ${p}cil." That is a "$p"cil. "That was a $pcil."
+This is a pencil. That is a pencil. That was a .
+```
+
+
