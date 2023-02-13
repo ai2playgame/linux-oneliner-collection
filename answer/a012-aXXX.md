@@ -15,6 +15,7 @@ unfileがあれば、`cat > unfile`でなにもしない。
 # Q14
 
 ```bash
-seq 100|while read n; do echo "羊が$n匹"; sleep 1; done
+$ seq 100|while read n; do echo "羊が$n匹"; sleep 1; done
+$ n=1;while [ $n -le 5 ]; do echo "羊が$n匹";sleep 1;n=$((n+1)); done
 ```
 
