@@ -24,3 +24,11 @@ $ n=1;while [ $n -le 5 ]; do echo "羊が$n匹";sleep 1;n=$((n+1)); done
 ```bash
 $ echo I am a perfect human | while read a; do echo ${a^^}; done
 ```
+
+# Q16
+
+```bash
+n="XYZ"; (for i in {A..C}; do n+=$i; echo $n; done); echo $n
+```
+
+括弧で囲んで、for内の変数の書き換えをサブシェルに押し込めて、最後のechoに影響しないようにした

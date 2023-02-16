@@ -61,4 +61,3 @@ $ echo "This is a ${p}cil." That is a "$p"cil. "That was a $pcil."
 This is a pencil. That is a pencil. That was a .
 ```
 
-
